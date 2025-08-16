@@ -7,21 +7,21 @@ export const Contact = () => {
   const contactInfo = [
     {
       label: 'Email',
-      value: 'israel.arcos2595@gmail.com',
-      href: 'mailto:israel.arcos2595@gmail.com',
+      value: 'israx.dev@gmail.com',
+      href: 'mailto:israx.dev@gmail.com',
       icon: '/assets/gmail.svg',
-    },
-    {
-      label: 'LinkedIn',
-      value: 'israel-a-175030204',
-      href: 'https://www.linkedin.com/in/israel-a-175030204/',
-      icon: '/assets/linkedin.svg',
     },
     {
       label: 'GitHub',
       value: 'israx',
       href: 'https://github.com/israx',
       icon: '/assets/github.svg',
+    },
+    {
+      label: 'LinkedIn',
+      value: 'israel.arcos',
+      href: 'https://www.linkedin.com/in/israel-a-175030204/',
+      icon: '/assets/linkedin.svg',
     },
   ];
 
@@ -55,23 +55,13 @@ export const Contact = () => {
               <div className="w-4 h-4 rounded-full bg-green-500"></div>
             </div>
             <div className="font-mono text-sm text-gray-400">
-              contact_manager.exe
+              contact.exe
             </div>
           </div>
 
           {/* Terminal Content */}
           <div className="p-8">
-            {/* Opening Message */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.8 }}
-              className="font-mono text-green-400 mb-8"
-            >
-              <div className="text-yellow-400">{'>'}</div>
-              <div className="ml-4 mt-2">Connection established...</div>
-              <div className="ml-4 text-gray-300">Available communication channels:</div>
-            </motion.div>
+
 
             {/* Contact Methods */}
             <div className="space-y-6">
@@ -111,9 +101,9 @@ export const Contact = () => {
                     </div>
 
                     {/* Terminal Indicator */}
-                    <div className="font-mono text-gray-500 group-hover:text-green-400 transition-colors duration-300">
+                    <a href={contact.href} target='_blank' className="font-mono text-gray-500 group-hover:text-green-400 transition-colors duration-300">
                       [connect]
-                    </div>
+                    </a>
                   </div>
                 </motion.div>
               ))}

@@ -6,8 +6,8 @@ import { SkillIcon } from '@/types';
 
 const skills: SkillIcon[] = [
   { name: 'React', path: '/assets/react.svg', alt: 'React' },
-  { name: 'TypeScript', path: '/assets/typescript.svg', alt: 'TypeScript' },
-  { name: 'JavaScript', path: '/assets/javascript.svg', alt: 'JavaScript' },
+  { name: 'TS', path: '/assets/typescript.svg', alt: 'TypeScript' },
+  { name: 'JS', path: '/assets/javascript.svg', alt: 'JavaScript' },
   { name: 'HTML5', path: '/assets/html.svg', alt: 'HTML5' },
   { name: 'CSS3', path: '/assets/css.svg', alt: 'CSS3' },
   { name: 'AWS', path: '/assets/aws.svg', alt: 'AWS' },
