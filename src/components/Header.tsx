@@ -42,7 +42,7 @@ export const Header = () => {
               
               {/* Resume Button */}
               <a
-                href="/assets/Resume.pdf"
+                href="/assets/IsraelArcosResume.pdf"
                 download="Israel_Arcos_Resume.pdf"
                 className="font-mono bg-transparent border-2 border-blue-400 text-blue-400 px-4 py-2 hover:bg-blue-400 hover:text-gray-900 transition-all duration-300 group"
               >
