@@ -2,12 +2,21 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { track } from '@vercel/analytics';
 import { AnimatedName } from './AnimatedName';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  // Analytics handler for resume downloads
+  const handleResumeDownload = (location: 'desktop' | 'mobile') => {
+    track('resume_download', {
+      button_location: location,
+      timestamp: new Date().toISOString(),
+    });
+  };
 
   const navItems = [
     { label: 'home', href: '#home' },
@@ -44,6 +53,7 @@ export const Header = () => {
               <a
                 href="/assets/IsraelArcosResume.pdf"
                 download="IsraelArcosResume.pdf"
+                onClick={() => handleResumeDownload('desktop')}
                 className="font-mono bg-transparent border-2 border-blue-400 text-blue-400 px-4 py-2 hover:bg-blue-400 hover:text-gray-900 transition-all duration-300 group"
               >
                 <span className="group-hover:hidden">[resume]</span>
@@ -84,7 +94,10 @@ export const Header = () => {
                 href="/assets/IsraelArcosResume.pdf"
                 download="Israel_Arcos_Resume.pdf"
                 className="block font-mono bg-transparent border-2 border-blue-400 text-blue-400 px-4 py-2 hover:bg-blue-400 hover:text-gray-900 transition-all duration-300 group text-center"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  handleResumeDownload('mobile');
+                  setIsMenuOpen(false);
+                }}
               >
                 <span className="group-hover:hidden">[resume]</span>
                 <span className="hidden group-hover:inline">[downloading...]</span>
