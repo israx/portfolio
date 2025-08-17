@@ -54,15 +54,14 @@ export const Projects = () => {
 
                 {/* Project Image */}
                 <div className="relative h-48 bg-gray-900 border-b border-green-400/20 overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="font-mono text-green-400 text-center">
-                      <div className="text-4xl mb-2">{'{'}</div>
-                      <div className="text-sm">{project.name}</div>
-                      <div className="text-xs text-gray-400 mt-1">[preview_loading...]</div>
-                      <div className="text-4xl mt-2">{'}'}</div>
-                    </div>
-                  </div>
-                  {/* Overlay for future image */}
+                  <Image
+                    src={project.imgUrl}
+                    alt={`Screenshot of ${project.name} project`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  {/* Overlay for hover effect */}
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-800/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
 

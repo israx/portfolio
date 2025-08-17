@@ -1,84 +1,44 @@
 {
   "projects": [
     {
-      "name": "Passwordless Authenticator",
-      "description": "Secure authentication system using WebAuthn and biometric verification, eliminating the need for traditional passwords while maintaining enterprise-level security.",
-      "id": "passwordless-auth",
-      "imgUrl": "/projects/passwordless-auth.webp",
-      "url": "https://auth-demo.israx.dev",
-      "repoUrl": "https://github.com/israx/passwordless-authenticator"
+      "name": "Blog Cards Showcase",
+      "description": "A collection of reusable, accessible blog card components built with Next.js 15, React 19, and TypeScript. Featuring responsive design, smooth animations, and comprehensive accessibility support.",
+      "id": "blog-cards-showcase",
+      "imgUrl": "/assets/projects/blog.webp",
+      "url": "https://blog-app.israx.dev/" ,
+      "repoUrl": "https://github.com/israx/blog-card-app"
     },
     {
-      "name": "AI Chatbot Assistant",
-      "description": "Intelligent conversational AI built with Next.js and OpenAI API, featuring context-aware responses, conversation memory, and real-time streaming.",
-      "id": "ai-chatbot",
-      "imgUrl": "/projects/ai-chatbot.webp",
-      "url": "https://chatbot.israx.dev",
-      "repoUrl": "https://github.com/israx/ai-chatbot-assistant"
+      "name": "Payment Landing Page",
+      "description": "A collection of reusable, accessible payment card components built with Next.js 15, React 19, and TypeScript. Featuring responsive design, smooth animations, and comprehensive accessibility support.",
+      "id": "payment-landing-page",
+      "imgUrl": "/assets/projects/payment.webp",
+      "url": "https://payment.israx.dev/",
+      "repoUrl": "https://github.com/israx/payment-landing-page"
     },
     {
-      "name": "Website Latency Widget Detector",
-      "description": "Real-time performance monitoring dashboard that analyzes website speed, Core Web Vitals, and provides actionable optimization recommendations.",
-      "id": "latency-detector",
-      "imgUrl": "/projects/latency-detector.webp",
-      "url": "https://latency-monitor.israx.dev",
-      "repoUrl": "https://github.com/israx/website-latency-detector"
+      "name": "Quiz App",
+      "description": "Quiz App to test your general knownladge.",
+      "id": "quiz-app",
+      "imgUrl": "/assets/projects/quiz.webp",
+      "url": "https://quiz.israx.dev/",
+      "repoUrl": "https://github.com/israx/quiz-app"
     },
     {
-      "name": "E-Commerce Platform",
-      "description": "Full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include inventory management, order tracking, and admin dashboard.",
-      "id": "ecommerce-platform",
-      "imgUrl": "/projects/ecommerce-platform.webp",
-      "url": "https://shop-demo.israx.dev",
-      "repoUrl": "https://github.com/israx/ecommerce-platform"
-    },
-    {
-      "name": "Task Management System",
-      "description": "Collaborative project management tool with real-time updates, drag-and-drop Kanban boards, team collaboration features, and progress analytics.",
-      "id": "task-manager",
-      "imgUrl": "/projects/task-manager.webp",
-      "url": "https://tasks.israx.dev",
-      "repoUrl": "https://github.com/israx/task-management-system"
-    },
-    {
-      "name": "Weather Forecast App",
-      "description": "Modern weather application with geolocation, 7-day forecasts, interactive maps, and severe weather alerts using OpenWeatherMap API.",
-      "id": "weather-app",
-      "imgUrl": "/projects/weather-app.webp",
-      "url": "https://weather.israx.dev",
-      "repoUrl": "https://github.com/israx/weather-forecast-app"
-    },
-    {
-      "name": "Social Media Dashboard",
-      "description": "Analytics dashboard for social media management with data visualization, post scheduling, engagement metrics, and multi-platform integration.",
-      "id": "social-dashboard",
-      "imgUrl": "/projects/social-dashboard.webp",
-      "url": "https://social-dash.israx.dev",
-      "repoUrl": "https://github.com/israx/social-media-dashboard"
-    },
-    {
-      "name": "Cryptocurrency Tracker",
-      "description": "Real-time crypto portfolio tracker with price alerts, market analysis, news integration, and detailed performance charts using CoinGecko API.",
-      "id": "crypto-tracker",
-      "imgUrl": "/projects/crypto-tracker.webp",
-      "url": "https://crypto.israx.dev",
-      "repoUrl": "https://github.com/israx/cryptocurrency-tracker"
-    },
-    {
-      "name": "Recipe Finder App",
-      "description": "Culinary discovery platform with ingredient-based search, nutritional information, cooking timers, and personalized recipe recommendations.",
-      "id": "recipe-finder",
-      "imgUrl": "/projects/recipe-finder.webp",
-      "url": "https://recipes.israx.dev",
-      "repoUrl": "https://github.com/israx/recipe-finder-app"
+      "name": "Todo App",
+      "description": "Classic todo app to manage tasks.",
+      "id": "todo-app",
+      "imgUrl": "/assets/projects/todo.webp",
+      "url": "https://todo.israx.dev/",
+      "repoUrl": "https://github.com/israx/todo-list"
     },
     {
       "name": "Portfolio Website",
       "description": "Personal portfolio website built with Next.js 15, React 19, and TypeScript. Features CLI terminal theme, smooth animations, and optimized performance.",
       "id": "portfolio-website",
-      "imgUrl": "/projects/portfolio.webp",
-      "url": "https://israx.dev",
-      "repoUrl": "https://github.com/israx/portfolio-website"
+      "imgUrl": "/assets/projects/portfolio.webp",
+      "url": "https://israx.dev/",
+      "repoUrl": "https://github.com/israx/portfolio"
     }
   ]
 }
