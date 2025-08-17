@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 interface UseTypewriterOptions {
   words: string[];
@@ -24,7 +24,7 @@ export const useTypewriter = ({
 
   useEffect(() => {
     const currentWord = words[currentWordIndex];
-    
+
     const timeout = setTimeout(() => {
       if (isPaused) {
         setIsPaused(false);
@@ -35,17 +35,17 @@ export const useTypewriter = ({
       if (isDeleting) {
         // Deleting characters
         setCurrentText(currentWord.substring(0, currentText.length - 1));
-        
+
         if (currentText.length === 1) {
           setIsDeleting(false);
-          setCurrentWordIndex((prev) => 
+          setCurrentWordIndex((prev) =>
             loop ? (prev + 1) % words.length : Math.min(prev + 1, words.length - 1)
           );
         }
       } else {
         // Typing characters
         setCurrentText(currentWord.substring(0, currentText.length + 1));
-        
+
         if (currentText.length === currentWord.length - 1) {
           if (currentWordIndex < words.length - 1 || loop) {
             setIsPaused(true);
@@ -73,28 +73,21 @@ export const useTypewriter = ({
   };
 };
 
-// Special hook for A.I -> Arcos Israel transition
-export const useNameTransition = () => {
+export const useNameTransition = (name: string) => {
   const [displayText, setDisplayText] = useState('');
   const [currentStep, setCurrentStep] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
 
-  const steps = [
-    'A.I',      // Start
-    'A.',       // Delete I
-    'A',        // Delete .
-    'Ar',       // Add r
-    'Arc',      // Add c
-    'Arco',     // Add o
-    'Arcos',    // Add s
-    'Arcos ',   // Add space
-    'Arcos I',  // Add I
-    'Arcos Is', // Add s
-    'Arcos Isr', // Add r
-    'Arcos Isra', // Add a
-    'Arcos Israe', // Add e
-    'Arcos Israel' // Add l
-  ];
+  const steps = useMemo(() => {
+    const splittedName = name.split('');
+    const nameSteps = splittedName.reduce((acc, current) => {
+      const accString = acc.length > 0 ? acc[acc.length - 1] : '';
+      return [...acc, `${accString}${current}`]
+    }
+      , [] as string[])
+    return nameSteps;
+  }, []);
+
 
   useEffect(() => {
     if (currentStep >= steps.length) {

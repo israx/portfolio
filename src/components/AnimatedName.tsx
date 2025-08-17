@@ -3,7 +3,8 @@
 import { useNameTransition, useBlinkingCursor } from '@/hooks/useTypewriter';
 
 export const AnimatedName = () => {
-  const { text, isComplete } = useNameTransition();
+  const name ="Israel Arcos"
+  const { text, isComplete } = useNameTransition(name);
   const showCursor = useBlinkingCursor(!isComplete);
 
   return (

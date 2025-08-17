@@ -12,7 +12,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Israel Arcos | Full Stack Developer",
   description: "Full Stack Developer with focus on front-end. Passionate about creating seamless user experiences and building robust web applications with modern technologies.",
-  keywords: "Israel Arcos, Full Stack Developer, Frontend Developer, React, TypeScript, Next.js, Web Development",
+  keywords: "Israel Arcos, Frontend Developer, React, TypeScript, Next.js, Web Development, Full Stack Developer",
   authors: [{ name: "Israel Arcos" }],
   openGraph: {
     title: "Israel Arcos | Full Stack Developer",
