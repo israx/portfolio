@@ -6,8 +6,8 @@ import { SkillIcon } from '@/types';
 
 const skills: SkillIcon[] = [
   { name: 'React', path: '/assets/react.svg', alt: 'React' },
-  { name: 'TS', path: '/assets/typescript.svg', alt: 'TypeScript' },
-  { name: 'JS', path: '/assets/javascript.svg', alt: 'JavaScript' },
+  { name: 'TypeScript', path: '/assets/typescript.svg', alt: 'TypeScript', extension:"ts.exe" },
+  { name: 'Java Script', path: '/assets/javascript.svg', alt: 'JavaScript', extension:"js.exe" },
   { name: 'HTML5', path: '/assets/html.svg', alt: 'HTML5' },
   { name: 'CSS3', path: '/assets/css.svg', alt: 'CSS3' },
   { name: 'AWS', path: '/assets/aws.svg', alt: 'AWS' },
@@ -59,7 +59,7 @@ export const Skills = () => {
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
                   <div className="font-mono text-xs text-gray-400 ml-2">
-                    {skill.name.toLowerCase()}.exe
+                    {skill.extension ?? `${skill.name.toLowerCase()}.exe`}
                   </div>
                 </div>
 

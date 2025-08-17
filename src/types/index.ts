@@ -15,4 +15,5 @@ export interface SkillIcon {
   name: string;
   path: string;
   alt: string;
+  extension?: string;
 }
