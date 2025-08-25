@@ -51,8 +51,8 @@ export const Header = () => {
               
               {/* Resume Button */}
               <a
-                href="/assets/IsraelArcosResume.pdf"
-                download="IsraelArcosResume.pdf"
+                href="/assets/Israel_Arcos_Resume.pdf"
+                download="Israel_Arcos_Resume.pdf"
                 onClick={() => handleResumeDownload('desktop')}
                 className="font-mono bg-transparent border-2 border-blue-400 text-blue-400 px-4 py-2 hover:bg-blue-400 hover:text-gray-900 transition-all duration-300 group"
               >
@@ -91,7 +91,7 @@ export const Header = () => {
                 </a>
               ))}
               <a
-                href="/assets/IsraelArcosResume.pdf"
+                href="/assets/Israel_Arcos_Resume.pdf"
                 download="Israel_Arcos_Resume.pdf"
                 className="block font-mono bg-transparent border-2 border-blue-400 text-blue-400 px-4 py-2 hover:bg-blue-400 hover:text-gray-900 transition-all duration-300 group text-center"
                 onClick={() => {
